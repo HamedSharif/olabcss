@@ -34,9 +34,13 @@ Use a font from Google fonts throughout the page.
 nav{ background-color: #C5DA6B;
     grid-column: 1/9;
     font-size: x-large;
-    font-family: 'Shrikhand', cursive; }
+    font-family: 'Shrikhand', cursive;
 
-a{ text-decoration: none; }
+}
+
+a{ text-decoration: none;
+    color: #eeeeee;
+}
 
 /*Links should increase in size when hovering them and they should be
 placed vertically.
@@ -58,9 +62,9 @@ nav ul li{
 /*All sections in the main content-section should have borders so it's easy
 to see what goes together.*/
 main section{ border: solid 2px black;}
-main { grid-gap: 1px;
-    grid-column: 1/9;
-padding: 22px;}
+main {   grid-gap: 1px;
+         grid-column: 1/9;
+          padding: 22px;}
 
 main .ImagesFigure>* {
     display: flex;
@@ -83,22 +87,20 @@ main a{ background-color: #2D7D7A;
          border-radius: 5px;font-family:'Shrikhand', cursive;
 }
 
-/*Use at least one media query*/
 
-@media  screen and (max-width: 500px) {
 
+/*--------- CSS FOR MOBILE ---------*/
+
+@media screen and (max-width: 780px){
 
     html {
-        background: url(img/images/Nightcity.jpeg) no-repeat center center fixed;
+        background: url(mobile.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
 
-    body,header,nav,main,footer {
-        width:100%;
-    }
 
 
 }
