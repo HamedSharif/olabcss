@@ -23,13 +23,13 @@ Use a font from Google fonts throughout the page.
 */
  header, footer {
         background-color: darkolivegreen;
-        grid-column: 1/7;
+        grid-column: 1/-1;
         font-family: 'Monoton', cursive;
         color: #eeeeee;
         font-size: 22px; }
 
 nav{ background-color: #C5DA6B;
-    grid-column: 1/9;
+    grid-column: 1/-1;
     font-size: x-large;
     font-family: 'Shrikhand', cursive;
 }
@@ -60,7 +60,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
-    grid-column: 1/7;
+    grid-column: 1/-1;
     padding: 22px;
     border: solid 2px black;
 }
@@ -68,12 +68,12 @@ main {
 
 
 #Presentation{
-    grid-column: 1/7;
+    grid-column: 1/-1;
 }
 
 .ImagesFigure{display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 1/7;
+    grid-column: 1/-1;
     align-content: center;
     border: #3846ff solid 4px;
 }
@@ -83,7 +83,7 @@ main {
 }
 
 #Form{
-    grid-column: 1/7;
+    grid-column: 1/-1;
 
 }
 
@@ -91,15 +91,28 @@ main a{ background-color: #2D7D7A;
         color: #dddddd;
          border-radius: 5px;font-family:'Shrikhand', cursive;
 }
+footer{
 
+    height: 40px;
+}
+
+#usernameForm{
+    grid-column: 1/-1;
+
+}
+#usernameForm form>*{color: #828DAD;
+    background-color: #eeeeee;
+
+}
 
 
 /*--------- CSS FOR MOBILE ---------*/
 
-@media screen and (max-width: 580px){
+@media only screen and (max-width: 500px){
 
-    html {
-        background: url(mobile.jpg) no-repeat center center fixed;
+    html {color: #eeeeee;
+        background: url(https://d13yacurqjgara.cloudfront.net/users/526/screenshots/978689/attachments/113398/seamless-backgrounds-05.jpg
+        ) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -108,10 +121,11 @@ main a{ background-color: #2D7D7A;
 
     header, footer {
         background-color: darkolivegreen;
-        grid-column: 1/9;
+        grid-column: 1/-1;
 
         font-family: 'Monoton', cursive;
         color: #eeeeee;
         font-size: medium; }
-}
 
+.ImagesFigure{display:block;}
+}

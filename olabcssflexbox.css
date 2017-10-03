@@ -1,0 +1,67 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(img/bgblackdashid.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #eeeeee;
+}
+body{
+    padding: 10px;
+}
+
+header,footer {
+    background: #828DAD;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav {
+    background: #C5DA6B;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+nav ul li{
+    background: #828DAD;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+main,section{
+    margin-top: 10px;
+    border: solid 3px white;
+}
+
+.ImagesFigure *{
+
+    display: flex;
+    justify-content: center ;
+    direction: rtl;
+
+
+
+
+}
+
+
