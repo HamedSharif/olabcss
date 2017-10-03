@@ -9,8 +9,9 @@ html {
     background-size: cover;
     color: #eeeeee;
 }
-body{
+body *{
     padding: 10px;
+    border-radius: 5px;
 }
 
 header,footer {
@@ -21,6 +22,7 @@ header,footer {
 }
 
 nav {
+    border: solid 3px rgba(0,0,0,0);
     background: #C5DA6B;
     display: flex;
     justify-content: center;
@@ -39,9 +41,10 @@ nav ul li{
 }
 a{
     text-decoration: none;
+    align-items: center;
 
 }
-a:hover{
+nav a:hover{
 
     text-align: center;
     font-size: x-large;
@@ -53,15 +56,15 @@ main,section{
     border: solid 3px white;
 }
 
-.ImagesFigure *{
-
+.ImagesFigure {
     display: flex;
-    justify-content: center ;
-    direction: rtl;
-
-
-
-
+    justify-content: space-around ;
 }
+
+img{
+    height: 200px;
+}
+
+
 
 
